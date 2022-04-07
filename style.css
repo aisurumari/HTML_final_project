@@ -1,0 +1,303 @@
+/* 
+Maria Magdalena WICHROWSKA 
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+}
+
+/*
+Style of the horizontal menu
+*/
+nav {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #1f5890;
+    position: sticky;
+    top: 0px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+
+nav li {
+    float: left;
+    width: 33%;
+}
+
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: bolder;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0px;
+}
+
+
+nav a:hover {
+    color: #d6d6d6;
+}
+
+
+#left {
+    text-align: left;
+}
+
+
+#right {
+    text-align: right;
+}
+
+
+#center {
+    text-align: center;
+}
+
+/*
+Style to make different rows and columns
+*/
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column2 {
+    float: left;
+    width: 20%;
+}
+
+.column3 {
+    float: left;
+    width: 11%;
+    text-align: right;
+}
+
+.column4 {
+
+    margin-left: 800px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+Style for the part with place and dates just under menu
+*/
+
+.dates {
+    color: brown;
+    word-spacing: -1px;
+    font-weight: bold;
+    margin: 3px;
+    padding: 8px;
+    text-align: right;
+}
+
+/*
+Normal text for the paragraphs
+*/
+.textNor {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/*
+Style for the text about the society - index.html
+*/
+.society {
+    margin: 0px;
+    margin-left: 10px;
+    color: #283e59;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#lightbluebackground {
+    background-color: #d6d6d6;
+}
+
+/*
+Style of box and space on the left side just under menu
+*/
+
+.box {
+    padding: 80px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #1f5890;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.space {
+    margin: 10px;
+}
+
+.center {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+    font-size: 19px;
+}
+
+/*
+Style for the box next to the image (index.html)
+*/
+
+.box2 {
+    margin-right: 16%;
+    margin-left: 25%;
+    margin-top: 15%;
+    background-color: #1f5890;
+    color: white;
+    padding: 2px;
+    font-size: 17px;
+}
+
+/*
+Styles of different images
+*/
+img {
+    margin-left: 20%;
+}
+
+#imgProgram {
+    margin-top: 15%;
+}
+
+#imgRegistration {
+    margin-top: 5%;
+    margin-left: 20%;
+    padding-left: 150px;
+}
+
+/*
+Style for the tables
+*/
+table {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.tg {
+    border-spacing: 0;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.tg td {
+    border-color: rgb(168, 168, 168);
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 5px 40px 5px 2px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 5px 10px 5px 2px;
+    word-break: normal;
+}
+
+.tg .tg-u287 {
+    background-color: #d6d6d6;
+    text-align: left;
+    vertical-align: top
+}
+
+
+.tg .tg-9y2p {
+    background-color: #1f5890;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top
+}
+
+.tg .tg-0lax {
+    text-align: left;
+    vertical-align: top;
+}
+
+/*
+Style for the form (registration.html)
+*/
+
+input[type=submit] {
+    background-color: #5c5a53;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+input[type=submit]:hover {
+    background-color: #1f5890;
+}
+
+input[type=text],
+select {
+    padding: 6px 10px 6px 10px;
+    width: 300px;
+    border: 1px solid black;
+    resize: vertical;
+    margin: 2px;
+}
+
+textarea {
+    width: 600px;
+    padding: 6px 10px 6px 10px;
+    border: 1px solid black;
+    resize: vertical;
+    margin: 2px;
+}
+
+label {
+    padding: 8px 5px 8px 0;
+    display: inline-block;
+}

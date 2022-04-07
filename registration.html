@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Maria Magdalena WICHROWSKA-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A web page for the final project" />
+    <meta name="keywords" content="HTML, Web, final project, registration" />
+    <meta name="author" content="Maria Magdalena Wichrowska" />
+    <link rel="stylesheet" href="style.css">
+    <title>Final Project</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="right">Information</a></li>
+            <li><a href="program.html" id="center">Program</a></li>
+            <li><a href="registration.html" id="left">Registration</a></li>
+        </ul>
+    </nav>
+
+    <div class="row" id="lightbluebackground">
+        <div class="column">
+            <p class="society"><u>Society of Informatics and Computer Sciences</u></p>
+        </div>
+        <div class="column">
+            <p class="dates">Bordeaux, France<br>5-7 September 2022</p>
+        </div>
+    </div>
+
+    <div class="space">
+        <span class="box">Registration</span>
+    </div>
+
+    <div>
+        <p class="textNor">All speakers and invited participants will be send an invitation to register with specific
+            instructions regarding uploading
+            abstracts for their presentations.</p>
+    </div>
+
+    <form>
+        <div class="row2">
+            <div class="column3">
+                <label for="lname">Name:</label><br>
+                <label for="title">Title:</label><br>
+                <label for="company">Company:</label><br>
+                <label for="institute">Institute:</label><br>
+                <label for="street">Street:</label><br>
+                <label for="pcode">Postal Code:</label><br>
+                <label for="city">City:</label><br>
+                <label for="country">Country:</label>
+            </div>
+            <div class="column2">
+                <input type="text" id="lname" name="lname"><br>
+                <select id="title" name="title" style="width:322px" ;>
+                    <option value="Dr">Dr</option>
+                    <option value="Prof">Prof</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Mr">Mr</option>
+                </select><br>
+                <input type="text" id="company" name="company"><br>
+                <input type="text" id="institute" name="institute"><br>
+                <input type="text" id="street" name="street"><br>
+                <input type="text" id="pcode" name="pcode"><br>
+                <input type="text" id="city" name="city"><br>
+                <input type="text" id="country" name="country"><br>
+            </div>
+            <div class="column2">
+                <img id="imgRegistration" src="img_registration.jpg" alt="photo for the registration page"
+                    width="400px">
+            </div>
+        </div>
+
+        <p style="color: #1f5890; font-weight: bold; margin-left: 10px;">Abstract</p>
+
+        <div class="row2">
+            <div class="column3">
+                <label for="atitle">Title:</label><br><br>
+                <label for="aresume">Resume:</label>
+            </div>
+
+            <div class="column2">
+                <textarea id="atitle" name="atitle" rows="2" cols="120" placeholder="60 characters max."></textarea><br>
+                <textarea id="aresume" name="aresume" rows="6" cols="120"
+                    placeholder="600 characters max."></textarea><br>
+            </div>
+
+            <div class="column4">
+                <input type="submit" value="Validation" onclick="myFunction()">
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
